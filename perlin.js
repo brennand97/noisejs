@@ -14,8 +14,8 @@
  *
  */
 
-(function(global){
-  var module = global.noise = {};
+var NoiseJs = function(){
+  var module = {};
 
   function Grad(x, y, z) {
     this.x = x; this.y = y; this.z = z;
@@ -306,5 +306,7 @@
           lerp(n011, n111, u), w),
        v);
   };
-
-})(this);
+  
+  return module;
+  
+};
