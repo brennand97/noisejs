@@ -14,6 +14,7 @@ with it, etc.
 ## How to make noise:
 
 ```javascript
+var noise = NoiseJs();
 noise.seed(Math.random());
 
 for (var x = 0; x < canvas.width; x++) {
