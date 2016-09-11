@@ -14,6 +14,7 @@ with it, etc.
 ## How to make noise:
 
 ```javascript
+var noise = NoiseJs();
 noise.seed(Math.random());
 
 for (var x = 0; x < canvas.width; x++) {
@@ -30,7 +31,8 @@ for (var x = 0; x < canvas.width; x++) {
 }
 ```
 
-The library exposes an object called `noise` with the following properties:
+The library exposes a function  `NoiseJs()` which returns an object
+with the following properties:
 
 - **simplex2(x, y)**: 2D Simplex noise function
 - **simplex3(x, y, z)**: 3D Simplex noise function
